@@ -1,0 +1,46 @@
+.cell {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 19px;
+  position: relative;
+  cursor: default;
+}
+
+.overlay::after {
+  visibility: visible;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(243, 243, 243);
+  border-top: solid 1px rgb(116, 116, 116);
+  border-right: solid 1px rgb(116, 116, 116);
+  /* -moz-box-shadow: inset 0 0 1px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 6px #4e4e4e; */
+}
+
+.flag-div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(100, 66, 66);
+  z-index: 5;
+  color: burlywood;
+}
+.minesweeper {
+  flex-wrap: wrap;
+  width: 470px;
+}
+
+div.minesweeper > div:nth-child(even) {
+  background-color: #c9cebd;
+}
+div.minesweeper > div:nth-child(odd) {
+  background-color: #b2bcaa;
+}
